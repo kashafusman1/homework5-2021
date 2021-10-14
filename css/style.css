@@ -79,13 +79,17 @@ nav a{
 
   /* Requirement 3a code here*/
   position: relative;
+  top: -40px;
   
 }
 
 /* Requirement 3b code here*/
 .skip a:focus{
+  position: absolute;
+  margin: auto;
   top: 0px;
 }
+
 
 /* Requirement 4 code here*/
 *:focus{
@@ -128,7 +132,7 @@ header p{
 
 
 .about-image{
-  grid-row: 3 / span 1;
+  grid-row: 2 / span 1;
   grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
@@ -137,13 +141,13 @@ header p{
 }
 
 .about{
-  grid-row: 3 / span 1;
+  grid-row: 2 / span 1;
   grid-column: 2 / 3;
  
 }
 
 .method-image{
-  grid-row: 4 / span 1;
+  grid-row: 3 / span 1;
   grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
@@ -151,25 +155,16 @@ header p{
 }
 
 .method{
-  grid-row: 4 / span 1;
+  grid-row: 3 / span 1;
   grid-column: 2 / 3;
   
 }
 
 /* You need to write some of your own selectors here */
-.contact-image{
-  grid-row: 6 / span 1;
-  grid-column: 1 / -1;
-  max-height: 700px;
-  overflow: hidden;
-}
 
-.contact{
-  grid-row: 6 / span 1;
-  grid-column: 2 / 3;
-}
+
 .clients-image{
-  grid-row: 5 / span 1;
+  grid-row: 4 / span 1;
   grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
@@ -177,9 +172,20 @@ header p{
 }
 
 .clients{
-  grid-row: 5 / span 1;
+  grid-row: 4 / span 1;
   grid-column: 2 / 3;
   
+}
+.contact-image{
+  grid-row: 5 / span 1;
+  grid-column: 1 / -1;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.contact{
+  grid-row: 5 / span 1;
+  grid-column: 2 / 3;
 }
 
 
@@ -270,6 +276,7 @@ header p{
 
   /*Turn off parallax*/
   header{
-    background-attachment: initial;
+    background-attachment: initial; 
+
   }
 }
